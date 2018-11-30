@@ -48,7 +48,7 @@ include_once 'database.php';
 	Enter Model:<input type="text" name="Model">
 	<br>
 	<br>
-	Enetr march:<input type="text" name="mac">
+	Enetr markh:<input type="text" name="mac">
 	<br><br>
 	<input type="submit" name="sub">
 </form>
@@ -63,22 +63,22 @@ if (isset($_POST['sub'])) {
 	$price=$result['price'];
 	$palce_repair=$result['palce_repair'];
 	$path=$result['path_photo'];
-	$place_buy=$result['place_buy'];
+	$place_buy=$result['palce_buy'];
 	echo "<table border='2px>'>
 	<tr>
 	<th>model</th>
-	<th>place of repair</th>
 	<th>march</th>
-	<th>price_repair</th>
-	<th>price_buy</th>
+	<th>place_repair</th>
+	<th>place_buy</th>
+	<th>price</th>
 	<th>photo</th>
 	</tr>
 	<tr>
 	<td>$Model</td>
-	<td>$place</td>
 	<td>$marc</td>
-	<td>$price_repair</td>
-	<td>$price_buy</td>
+	<td>$palce_repair</td>
+	<td>$place_buy</td>
+	<td>$price</td>
 	<td><img src=$path width='100px' height='100px'></td>
 	</tr>
 	";
