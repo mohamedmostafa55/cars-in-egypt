@@ -64,7 +64,7 @@ if(isset($_POST['submit']))
 }
 	function logIN($email,$pass){
 		global $conn;
-	$result = mysqli_query($conn, "select * from users where pass='$pass' and email='$email'");
+	$result = mysqli_query($conn, "select * from user where pass='$pass' and email='$email'");
 	if (mysqli_num_rows($result)== 0)
 			return False;
 		return True;
